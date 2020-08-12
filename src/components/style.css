@@ -12,7 +12,7 @@ body {
 }
 
 
-.question-container {
+.container {
     width: 300px; margin: auto;
 }
 
@@ -41,12 +41,12 @@ button:hover {
     background: #860dd6
 }
 
-.ball-container {
+.ball {
     margin: 30px;
     text-align: center;
 }
 
-.ball-black-outer {
+.black-outer {
     background: radial-gradient(farthest-corner at 40px 40px, #666, black);
     width: 420px;
     height: 420px;
@@ -59,7 +59,7 @@ button:hover {
 }
 
 
-.ball-white-inner {
+.white-inner {
     background: radial-gradient(white, #ececec);
     border-radius: 100%;
     width: 200px;
@@ -73,12 +73,12 @@ button:hover {
     transition: all 1s
 }
 
-.eight {
+.center {
     font-size: 40px;
     margin: 50px 0 0 0;
 }
 
-.ball-shadow 
+.shadow 
  { width: 450px;
   height: 50px;
   border-radius: 50%;
