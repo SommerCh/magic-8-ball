@@ -25,8 +25,7 @@ reply: "Selvfølgelig"
 const [answer, setAnswer] = useState(0);
 
 const randomAnswers = e => {
-const len = replys.length;
-setAnswer(Math.floor(Math.random() * len));
+setAnswer(Math.floor(Math.random() * replys.length));
 };
 
 
@@ -34,24 +33,25 @@ return (
 <div>
 
   <div>
-
-    <div className="question-container">
-      <input type="text" placeholder="Stil dit spørgsmål" />
+    <div className="container">
+      <input type="text" 
+      placeholder="Stil dit spørgsmål"
+      />
+      
       <button onClick={randomAnswers}>
-        se dit svar
+        Se dit svar
       </button>
     </div>
-
-    <div className="ball-container">
-      <div className="ball-black-outer">
-        <div className="ball-white-inner">
+    <div className="ball">
+      <div className="black-outer">
+        <div className="white-inner">
           <div>
-            <div className='eight'>{replys[answer].reply}</div>
+            <div className='center'>{replys[answer].reply}</div>
           </div>
 
         </div>
       </div>
-      <div className="ball-shadow"></div>
+      <div className="shadow"></div>
     </div>
 
   </div>
